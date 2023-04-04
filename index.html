@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>JS Activity</title>
+</head>
+<body>
+  <h3>JS ACTIVITY</h3>
+  <!-- Activity 1 -->
+  <form action="#" method="#" class="flex-c relative integer">
+    <span id="num-el"></span>
+    <input type="number" id="numValue" placeholder="Enter number here" onKeyUp="intChecker()">
+    <span class="absolute" id="title">Integer Checker</span>
+  </form>
+
+  <!-- Activity 1 -->
+  <form action="#" method="#" class="flex-c relative parity">
+    <span id="num2-el"></span>
+    <input type="number" id="num2Value" placeholder="Enter number here" onKeyUp="parityChecker()">
+    <span class="absolute" id="title2">Parity Checker</span>
+  </form>
+
+  <!-- Activity 3 -->
+  <form action="#" method="#" class="flex-c relative voter">
+    <span id="num3-el"></span>
+    <div class="section-container flex-r">
+      <div class="flex-c section1-body">
+        <div class="flex-r first-name">
+          <label for="first-name">First name:</label>
+          <input type="text" id="first-name" onKeyUp="greeting()" required>
+        </div>
+        <div class="flex-r last-name">
+          <label for="last-name">Last name:</label>
+          <input type="text" id="last-name" onKeyUp="greeting()" required>
+        </div>
+        <div class="flex-c residency relative">
+          <span>PH resident for at least a (1) year?</span>
+          <div class="radio-btn flex-r">
+            <div class="radio-yes flex-r">
+              <input type="radio" id="residency-yes" name="rRadio" onChange="eligibility()" value="yes">
+              <label for="residency-yes">Yes</label>
+            </div>
+            <div class="radio-no flex-r">
+              <input type="radio" id="residency-no" name="rRadio" onChange="eligibility()" value="no">
+              <label for="residency-no">No</label>
+            </div>
+          </div>
+        </div>
+        <div class="flex-c citizen relative">
+          <span>Filipino citizen?</span>
+          <div class="radio-btn flex-r">
+            <div class="radio-yes flex-r">
+              <input type="radio" id="citizen-yes" name="cRadio" onChange="eligibility()" value="yes">
+              <label for="citizen-yes">Yes</label>
+            </div>
+            <div class="radio-no flex-r">
+              <input type="radio" id="citizen-no" name="cRadio" onChange="eligibility()" value="no">
+              <label for="citizen-no">No</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex-c section2-body">
+        <div class="flex-r age">
+          <label for="age">Age:</label>
+          <input type="number" id="age" onKeyUp="eligibility()" required>
+        </div>
+        <input id="submit-btn" onClick="submitForm()" value="SUBMIT">
+      </div>
+    </div>
+    <span class="absolute" id="title3">Voter Eligibility</span>
+  </form>
+
+  <script src="assets/script/script.js">
+  </script>
+</body>
+</html>

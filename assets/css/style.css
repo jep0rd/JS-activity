@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Bree+Serif&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Alkatra', cursive;
+font-family: 'Bree Serif', serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+  text-align: center;
+  color: whitesmoke;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(7, 7, 7);
+  font-family: 'Roboto', sans-serif;
+}
+input{
+  color: rgb(7, 7, 7);
+  background-color: #444444;
+  border: 1px solid #ECECEC;
+}
+.flex-r{
+  display: flex;
+}
+.flex-c{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+
+/* Integer Checker */
+form.integer{
+  width: 600px;
+  border: 2px solid orangered;
+  height: 150px;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+
+input:focus-visible {
+  outline: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input#numValue{
+  background-color: transparent;
+  border: 0;
+  color: white;
+  padding-block: 5px;
+  font-weight: bolder;
+  font-size: 2rem;
+  height: 75px;
+}
+span#num-el{
+  font-size: 1.2rem;
+  background-color: orangered;
+  height: 40px;
+  border: 0;
+  color: rgb(7, 7, 7);
+  padding-block: 5px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+#title{
+  bottom: -18px;
+  right: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color:rgb(7, 7, 7);
+  color: orangered;
+  padding-inline: 15px;
+  font-family: 'Alkatra', cursive;
+  letter-spacing: 1px;
+}
+/* Integer Checker End */
+
+form.parity{
+  width: 600px;
+  border: 2px solid #7149C6;
+  height: 150px;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+input#num2Value{
+  background-color: transparent;
+  border: 0;
+  color: white;
+  padding-block: 5px;
+  font-weight: bolder;
+  font-size: 2rem;
+  height: 75px;
+}
+span#num2-el{
+  font-size: 1.2rem;
+  background-color: #7149C6;
+  height: 40px;
+  border: 0;
+  color: rgb(7, 7, 7);
+  padding-block: 5px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+#title2{
+  bottom: -18px;
+  right: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color:rgb(7, 7, 7);
+  color: #7149C6;
+  padding-inline: 15px;
+  font-family: 'Alkatra', cursive;
+  letter-spacing: 1px;
+}
+/* Parity Checker End */
+
+/* Voter Eligiblity */
+form.voter{
+  width: 600px;
+  border: 2px solid #ECECEC;
+  height: auto;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+span#num3-el{
+  font-size: 1.2rem;
+  background-color: #ECECEC;
+  height: 40px;
+  border: 0;
+  color: rgb(7, 7, 7);
+  padding-block: 5px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+#title3{
+  bottom: -18px;
+  right: 20px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color:rgb(7, 7, 7);
+  color: #ECECEC;
+  padding-inline: 15px;
+  font-family: 'Alkatra', cursive;
+  letter-spacing: 1px;
+}
+.section-container > *{
+  width: 50%;
+}
+
+.section1-body{
+  padding: 20px 20px;
+}
+.section1-body > *{
+  width: 100%;
+}
+.first-name, .last-name{
+  margin-bottom: 20px;
+}
+.first-name label, .last-name label{
+  margin-right: 20px;
+}
+.residency, .citizen{
+  padding-block: 20px;
+}
+.residency::before, .citizen::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  height: .5px;
+  background-color: #444444;
+  width: 100%;
+}
+.radio-btn{
+  justify-content: space-evenly;
+}
+.radio-yes, .radio-no{
+  padding: 10px 20px;
+  gap: 5px;
+}
+input[type="radio"]{
+  cursor: pointer;
+}
+
+.section2-body{
+  padding: 20px;
+  margin: 0;
+}
+.section2-body > *{
+  width: 100%;
+}
+.age{
+  margin-bottom: 100px;
+}
+.age label{
+  margin-right: 20px;
+}
+#age{
+  width: 5ch;
+  color: #ECECEC;
+  font-weight: bold;
+}
+#first-name, #last-name{
+  width: 20ch;
+  color: #ECECEC;
+  font-weight: bold;
+}
+
+#submit-btn{
+  align-self: center;
+  width: 200px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background-color: #ECECEC;
+  border-radius: 5px;
+  cursor: pointer;
+}
